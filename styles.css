@@ -1,0 +1,227 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  background: rgb(221, 221, 221);
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  background: linear-gradient(to top left, lightgray, white);
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  margin: 7% auto 10px;
+  border-radius: 40px;
+  box-shadow: 0 20px 15px 0 rgba(100, 100, 100, 0.5);
+  position: relative;
+}
+@media (max-device-width: 640px) {
+  main {
+    margin: 80px auto;
+    width: 90vw;
+    height: 45vh;
+    padding: 0 10%;
+    font-size: 85%;
+  }
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 60px 0 0;
+}
+@media (max-device-width: 640px) {
+  .container1 {
+    width: 25%;
+    height: 25%;
+  }
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+.company {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  margin-left: 5px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 15px;
+}
+@media (max-device-width: 640px) {
+  .container2 {
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+  }
+}
+.song-num {
+  margin: 20px 0 10px 0;
+}
+.song-name {
+  font-family: "Roboto", sans-serif;
+}
+.song-artist {
+  font-family: "Montserrat", sans-serif;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.song-name {
+  margin-bottom: 25px;
+}
+.song-img {
+  margin-top: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  animation: rotation 2.5s infinite linear;
+  animation-play-state: paused;
+}
+@media (max-device-width: 640px) {
+  .song-img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.run-animation {
+  animation-play-state: running;
+}
+.icon .fas {
+  padding: 20px;
+  margin: 0 5px;
+  background: darkgray;
+  border-radius: 30px;
+  opacity: 70%;
+  cursor: pointer;
+}
+.song-control {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 30px 0 10px 0;
+}
+input {
+  outline: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 40px;
+  background: grey;
+}
+.volume-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+@media (max-device-width: 640px) {
+  .volume-bar {
+    margin: 30px 0 0 5px;
+  }
+}
+.fa-volume-up,
+.fa-volume-mute {
+  opacity: 70%;
+  cursor: pointer;
+}
+.volume-num {
+  font-size: 14px;
+  margin-right: 10px;
+}
+@media (max-device-width: 640px) {
+  .volume-num {
+    font-size: 0.5rem;
+  }
+}
+.fa-volume-mute:hover {
+  color: rgb(105, 105, 105);
+}
+.fa-volume-up:hover {
+  color: rgb(105, 105, 105);
+}
+.volume {
+  width: 100px;
+  height: 5px;
+  margin-left: 5px;
+}
+@media (max-device-width: 640px) {
+  .volume {
+    width: 75px;
+  }
+}
+.song-duration-bar {
+  margin-top: 20px;
+  width: 200px;
+  height: 5px;
+}
+@media (max-device-width: 640px) {
+  .song-duration-bar {
+    width: 150px;
+  }
+}
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  background: rgb(24, 24, 24);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.song-pause {
+  background-image: url("https://tse1.mm.bing.net/th?id=OIP.N0kcNnp6OXanBRxs4mKbbQHaHa&pid=Api&P=0&w=300&h=300");
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+}
+.container3 {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #555;
+  margin-top: 224px;
+  width: 100%;
+}
+@media (max-device-width: 640px) {
+  .container3 {
+    width: 100vw;
+  }
+}
+.fab {
+  margin: 0 10px;
+  color: #fff;
+}
+.fab:hover {
+  color: #aaa;
+}
+.brand {
+  margin-top: 20px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="https://th.bing.com/th/id/R8a57cc2f8ab9ea00857940022e90456e?rik=VnL275w9vikyDQ&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_40625.png&ehk=ZC1xPf8sXZJJ%2by9fyalT5Hwz7XOcQOJlLzf8VwzAHM8%3d&risl=&pid=ImgRaw"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>MusicMania</title>
+  </head>
+
+  <body>
+    <audio class="audioTag" src=""></audio>
+    <main>
+      <div class="container1">
+        <div class="logo">
+          <i class="fas fa-music"><h3 class="company">MusicMania</h3></i>
+        </div>
+        <img class="song-img" />
+        <div class="song-num"></div>
+        <div class="volume-bar">
+          <p class="volume-num">100</p>
+          <i class="fas fa-volume-up" onclick="muteSong()"></i>
+          <input
+            class="volume"
+            type="range"
+            max="100"
+            min="0"
+            value="100"
+            oninput="volumeAdjust()"
+          />
+        </div>
+      </div>
+      <div class="container2">
+        <div class="song-name"></div>
+        <div class="song-artist"></div>
+        <div class="song-duration">
+          <input
+            class="song-duration-bar"
+            oninput="changeDuration()"
+            type="range"
+            max="100"
+            min="0"
+            value="0"
+            name=""
+            id=""
+          />
+        </div>
+        <div class="song-duration-time"><p></p></div>
+        <div class="song-control">
+          <div onclick="prevSong()" class="song-prev icon">
+            <i class="fas fa-backward"></i>
+          </div>
+          <div class="icon song-play" onclick="checkSong()">
+            <i class="fas fa-play"></i>
+          </div>
+          <div onclick="nextSong()" class="icon song-next">
+            <i class="fas fa-forward"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container3">
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/sridhar-maskeri-1714001aa/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-linkedin" style="font-size: 30px"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100005243626291
+        "
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-facebook-square" style="font-size: 30px"></i
+        ></a>
+        <a
+          href="https://github.com/floating-dynamo"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github-square" style="font-size: 30px"></i
+        ></a>
+      </div>
+      <div class="brand">
+        <p>Sridhar Maskeri ©️ 2020-2021</p>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
